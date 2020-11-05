@@ -23,7 +23,11 @@ default: &default
 
 development:
   <<: *default
-  database: project1_test_backend_development
+  database: postgres
+  username: kevin
+  password: tiger315
+  host: projects.cidcg5bmrsjg.us-east-2.rds.amazonaws.com
+  port: 5432
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
